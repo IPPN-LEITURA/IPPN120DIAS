@@ -21,25 +21,7 @@ window.LEITURAS_DO_DIA = {
 	  
 	  <h4>Para refletir</h4>
       <p>Onde você precisa abandonar a falsa ideia de controle e descansar em Deus?</p>
-    `,
-    // Os ficheiros descarregáveis apontam para a pasta "docs/"
-    complementos: [
-      {
-        tipo: "youtube",
-        titulo: "Pregação: A Teologia da Criação em Gênesis 1",
-        url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-      },
-      {
-        tipo: "arquivo",
-        titulo: "Esboço do Estudo em PDF",
-        url: "docs/estudo-dia01.pdf"
-      },
-      {
-        tipo: "link",
-        titulo: "Artigo de Apoio: Os 6 Dias da Criação",
-        url: "https://www.ippn.org.br/artigos/genesis-1"
-      }
-    ]
+    `
   },
   2: {
     titulo: "Gênesis, capítulo 2",
@@ -88,14 +70,7 @@ window.LEITURAS_DO_DIA = {
 
 
 	  
-    `,
-    complementos: [
-      {
-        tipo: "youtube",
-        titulo: "Estudo em Vídeo: O Descanso do Sétimo Dia",
-        url: "https://youtu.be/dQw4w9WgXcQ"
-      }
-    ]
+    `
   },
   3: {
     titulo: "Gênesis, capítulo 3",
@@ -216,9 +191,98 @@ window.LEITURAS_DO_DIA = {
     link: "https://www.youtube.com/@ippnaovivo",
     audio: "audio/dia06.mp3",
     transcricao: `
-     <p> Aproveite esse dia para rever sua anotações e reflexões, ouvir as devocionais ou ler os textos sugeridos para se aprofundar no assunto da semana!
-	 </p>
-	 	  
+     <p> Segue no link abaixo, dos Materiais Complementares, uma reflexão sobre o deleite de cultuar ao Senhor.
+	 </p>	 	  
     ` 
+	,
+	    complementos: [
+      {
+        tipo: "link",
+        titulo: "Hoje é dia de se deleitar em Cristo",
+        url: "https://www.instagram.com/p/Dc8WOuMFojq/?stkn=amp4MjVqYTZwZXUy"
+      }
+    ]
+  	
+  },
+  7 : {
+    titulo: "Gênesis, capítulo 6",
+    subtitulo: "A corrupção alcança toda a humanidade",
+    link: "https://www.bibliaonline.com.br/acf/gn/6",
+    audio: "audio/dia07.mp3",
+    transcricao: `
+     <p> Gênesis 6 nos mostra até onde o pecado pode chegar quando se espalha sem freios pelo coração humano e pela sociedade.
+Depois de Caim e da violência crescente de sua linhagem, Cominando em Lameque, a humanidade não se torna melhor. Pelo contrário, a corrupção se aprofunda e se alastra. 
+É verdade que os primeiros versículos do capítulo 6 levantam algumas perguntas difíceis. Quem eram os filhos de Deus? Quem eram os nefilins?
+Ao longo da história, diferentes interpretações foram propostas. Contudo, nosso objetivo aqui... Não será resolver essas questões exegéticas, mas perceber aquilo que o próprio texto coloca em primeiro plano.
+O centro do capítulo está na avaliação de Deus sobre a humanidade. Viu o Senhor que a maldade do homem havia se multiplicado na terra.
+	 </p>
+	 
+      <blockquote><b>O problema não estava apenas nas ações externas, mas no coração. Seus pensamentos e intenções estavam continuamente inclinados para o mal.</b></blockquote>
+	  
+	<p> 
+	 	Gênesis 3, portanto, retrata o cenário para o dilúvio. O juízo que virá não será arbitrário, mas uma resposta santa e justa a uma humanidade profundamente corrompida.
+Ainda assim, mesmo nesse cenário sombrio, a graça não desaparece. Em meio ao anúncio do juízo, encontramos uma frase cheia de esperança.
+Noé achou graça aos olhos do Senhor. Assim, esse capítulo nos apresenta duas verdades lado a lado, a seriedade do pecado humano e a surpreendente graça de Deus.<br>
+
+Por isso, esse texto nos mostra algumas coisas importantes sobre Deus. Gênesis 6 mostra que Deus vê com absoluta clareza a corrupção do coração humano e não trata o pecado com indiferença Ele é santo, justo e tem autoridade para julgar a sua criação Ao mesmo tempo, o texto revela que o juízo de Deus não é frio ou impessoal.
+A maldade humana entristece o coração de Deus. E mesmo em meio ao anúncio do dilúvio, a graça aparece. Noé achou graça aos olhos do Senhor.
+O Deus que julga o pecado é também o Deus que soberanamente preserva um povo para si. Mas veja que esse texto também revela muito sobre o ser humano.
+O texto revela a profundidade da corrupção humana. Era continuamente mal todo o desígnio do seu coração.
+	</p>
+		
+		<blockquote><b>O pecado não é apenas um problema de comportamento externo. Ele nasce no coração e alcança pensamentos, desejos, decisões e relacionamentos.</b></blockquote>
+		
+	<p>	
+		Gênesis 6 nos adverte a não subestimar o pecado. Quando o coração se afasta de Deus, a corrupção cresce e se espalha.
+Por isso não precisamos apenas de melhores circunstâncias, mas de um coração transformado pela graça de Deus. Mas enxergue também como esse texto se encaixa na grande história da redenção.
+Gênesis 6 mostra que o pecado iniciado lá no jardim alcançou dimensões devastadoras. 
+	</p> 
+	
+		<blockquote><b>O dilúvio será um ato de juízo sobre a humanidade corrompida, mas Deus não abandona sua promessa de redenção de Gênesis 3.15.</b></blockquote>
+	
+	<p>
+	Noé encontra graça e é preservado por meio da arca. Assim, a história continua porque Deus decidiu salvar. Mais tarde, o Novo Testamento utiliza o dilúvio como uma imagem de juízo e salvação, apontando para a necessidade de um refúgio definitivo.
+Noé e Arca nos ajudam a perceber um padrão que encontra seu cumprimento pleno em Cristo. Deus julga o pecado, mas providencia graciosamente um meio de salvação para o seu povo.<br>
+
+Mas, então, o que devo crer, abandonar e agradecer ou praticar hoje a partir desse texto? Preciso crer que Deus vê o coração e que seu juízo contra o pecado é justo.
+Devo abandonar qualquer visão superficial do pecado como se ele fosse apenas um erro pequeno ou um problema externo. Também devo agradecer, porque mesmo quando a humanidade merece juízo, Deus continua demonstrando graça.<br>
+
+Como noé, sou chamado a ouvir a palavra de Deus e a responder com fé e obediência. Hoje devo vigiar meu coração, não me conformar com a corrupção ao meu redor e buscar refúgio em Cristo, reconhecendo que minha esperança não está em minha própria justiça, mas na graça de Deus.
+	</p>
+	 
+	  
+	  
+	  <h4>Para refletir</h4>
+      <p>“Quando o pecado corrompe o coração e traz juízo, a graça de Deus provê em Cristo o verdadeiro refúgio, onde o pecador é salvo não por sua justiça, mas pela graça soberana de Deus.”</p>
+
+
+	  
+    `,
+    complementos:       [
+		{
+        tipo: "link",
+        titulo: "Quem são os filhos de Deus e as filhas dos homens em Gênesis 6",
+        url: "https://voltemosaoevangelho.com/blog/2014/04/quem-sao-os-filhos-de-deus-e-as-filhas-dos-homens-em-genesis-6/"
+      },
+	  
+	  {
+        tipo: "link",
+        titulo: "Quem são os filhos de Deus em Gênesis 6",
+        url: "https://coalizaopeloevangelho.org/article/quem-sao-os-filhos-de-deus-em-genesis-6/"
+      },
+	  
+	  	  {
+        tipo: "link",
+        titulo: "Quem foram os nephilins?",
+        url: "https://danielsantosjunior.com.br/quem-foram-os-nephilins/"
+      },
+	  
+	  	  	  {
+        tipo: "link",
+        titulo: "Quem são os “filhos de Deus” em Gênesis 6?",
+        url: "https://pt.ligonier.org/artigos/quem-sao-os-filhos-de-deus-em-genesis-6/"
+      }  
+	  
+	  ]
   }
 };
