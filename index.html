@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>120 Dias de Bíblia - IPPN</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,500;0,600;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Topo / Header com Logo e Ações na Direita -->
+<header class="app-header">
+    <div class="header-container">
+      <div class="brand">
+        <img src="img/logo-ippn.png" alt="Igreja Presbiteriana Parque das Nações" class="logo-img">
+        <span class="brand-text">IPPN</span>
+      </div>
+      <div class="header-actions">
+        <button id="btn-pastor" class="btn-pastor">✍️ Palavra do Pastor</button>
+        <button id="btn-theme" class="btn-icon" aria-label="Alternar Tema">☀️</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Banner do Cabeçalho -->
+  <section class="hero-banner">
+    <div class="hero-content">
+      <span class="eyebrow">PLANO DE LEITURA BÍBLICA</span>
+      <h1>120 dias de Bíblia</h1>
+      <p class="hero-subtitle">Uma jornada diária pela Palavra de Deus</p>
+
+      <!-- Pilares de Aprendizado -->
+      <div class="pillars-grid">
+        <div class="pillar-card">
+          <span class="pillar-icon">📖</span>
+          <div class="pillar-text">
+            <strong>Leia</strong>
+            <small>Aprofunde-se</small>
+          </div>
+        </div>
+
+        <div class="pillar-card">
+          <span class="pillar-icon">🎧</span>
+          <div class="pillar-text">
+            <strong>Ouça</strong>
+            <small>Receba ensinamentos</small>
+          </div>
+        </div>
+
+        <div class="pillar-card">
+          <span class="pillar-icon">❤️</span>
+          <div class="pillar-text">
+            <strong>Reflita</strong>
+            <small>Aplique à sua vida</small>
+          </div>
+        </div>
+
+        <div class="pillar-card">
+          <span class="pillar-icon">🌱</span>
+          <div class="pillar-text">
+            <strong>Pratique</strong>
+            <small>Viva a palavra</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main class="main-container">
+    
+    <!-- Painel de Progresso Individual -->
+    <section class="progress-section">
+      <div class="progress-card">
+        <div class="progress-info">
+          <div>
+            <span class="progress-title">Seu Progresso Individual</span>
+            <h2 id="user-progress-text">0 de 120 dias concluídos (0%)</h2>
+          </div>
+          <div class="streak-badge" id="streak-container">
+            <span class="streak-fire">🔥</span>
+            <span id="streak-count">0</span> dias seguidos
+          </div>
+        </div>
+        <div class="progress-bar-bg">
+          <div class="progress-bar-fill" id="user-progress-bar" style="width: 0%;"></div>
+        </div>
+      </div>
+
+      <!-- Navegação Entre Dias -->
+      <div class="day-nav-controls">
+        <button id="btn-prev-day" class="btn-nav">← Dia Anterior</button>
+        <span id="nav-day-indicator" class="nav-day-indicator">Dia 1 de 120</span>
+        <button id="btn-next-day" class="btn-nav">Próximo Dia →</button>
+      </div>
+    </section>
+
+    <!-- Conteúdo da Leitura do Dia Selecionado -->
+    <section class="day-content-section card">
+      <div class="day-header">
+        <div>
+          <span class="day-badge" id="current-day-label">Dia 1</span>
+          <h2 id="day-title" class="day-title">Carregando...</h2>
+          <p id="day-subtitle" class="day-subtitle"></p>
+        </div>
+        
+        <!-- Ações do Cabeçalho do Dia -->
+        <div class="day-header-actions">
+          <a id="btn-biblia-link" href="#" target="_blank" class="btn-secondary">📖 Texto Bíblico Completo</a>
+          <button id="btn-complete-day" class="btn-check">
+            <span class="check-icon">✓</span> Marcar como Lido
+          </button>
+        </div>
+      </div>
+
+      <!-- Transcrição/Reflexão -->
+      <div id="day-text-content" class="reading-body"></div>
+
+      <!-- Área de Materiais Complementares -->
+      <div id="day-complementos" class="complementos-section"></div>
+    </section>
+
+    <!-- Módulos do Calendário -->
+    <section class="calendar-section card">
+      <h3>Calendário dos 120 Dias</h3>
+      <p class="section-sub">Selecione o dia para acompanhar o plano:</p>
+
+      <div class="modules-tabs" id="modules-tabs">
+        <button class="tab-btn active" data-module="1">Módulo 1 (Dias 1-30)</button>
+        <button class="tab-btn" data-module="2">Módulo 2 (Dias 31-60)</button>
+        <button class="tab-btn" data-module="3">Módulo 3 (Dias 61-90)</button>
+        <button class="tab-btn" data-module="4">Módulo 4 (Dias 91-120)</button>
+      </div>
+
+      <div class="reading-calendar" id="calendar-grid"></div>
+
+      <div class="calendar-legend">
+        <span><i class="legend-dot available"></i> Disponível</span>
+        <span><i class="legend-dot completed"></i> Concluído</span>
+        <span><i class="legend-dot unavailable"></i> Não disponibilizado</span>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Player Fixo de Áudio no Rodapé -->
+  <div class="sticky-player" id="sticky-player">
+    <div class="player-container">
+      <div class="player-info">
+        <span class="player-title" id="player-title">Ouça a reflexão de hoje</span>
+        <span class="player-subtitle" id="player-subtitle">Dia 1</span>
+      </div>
+      <div class="player-controls">
+        <button id="btn-player-prev10" class="btn-player-sub">↶10s</button>
+        <button id="btn-player-play" class="btn-player-main">▶</button>
+        <button id="btn-player-next10" class="btn-player-sub">10s↷</button>
+        <button id="btn-player-speed" class="btn-player-sub">1×</button>
+      </div>
+      <div class="player-progress-container">
+        <span id="player-current-time">0:00</span>
+        <input type="range" id="player-progress" value="0" min="0" max="100">
+        <span id="player-duration">0:00</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Palavra do Pastor, Introdução e Orientações -->
+  <div id="pastor-modal" class="modal-overlay">
+  <div class="modal-card">
+    <div class="modal-header">
+      <h2>✍️ Palavra do Pastor & Orientações</h2>
+      <button id="btn-close-pastor" class="modal-close" aria-label="Fechar Modal">&times;</button>
+    </div>
+    <div class="modal-body">
+      
+      <section class="modal-section">
+        <h3>Palavra do Pastor Herley Rocha Souza</h3>
+        <p>Bem-vindo ao IPPN 120 Dias de Bíblia, um plano de leitura especialmente preparado para guiar você através da Palavra de Deus nos meses de setembro a dezembro de 2026.</p>
+        <p>Esta jornada de 120 dias foi organizada para que você possa mergulhar nas Escrituras de forma consistente, significativa e transformadora. Cada dia traz uma leitura selecionada acompanhada de uma "Grande Ideia", isto é, um pensamento central que ilumina o texto e convida à reflexão e aplicação prática na sua vida.</p>
+        <p>Como cremos que a leitura regular da Bíblia tem o poder de renovar a mente, fortalecer a fé e aproximar cada crente do coração de Deus, convidamos você a assumir este compromisso conosco, não apenas como uma disciplina espiritual, mas como um encontro diário e pessoal com o Senhor.</p>
+		<p>Que estes 120 dias sejam marcados pela graça, pelo crescimento e pela presença viva de Deus em cada página que você virar. Que a Sua Palavra seja lâmpada para os seus pés e luz para o seu
+caminho.</p>
+      </section>
+
+      <section class="modal-section">
+        <h3>Introdução</h3>
+        <p>Serão <strong>120 dias para conhecer melhor a Palavra,</strong>conhecer melhor a Deus e viver melhor o evangelho. A proposta desta jornada não é simplesmente terminar um plano de leitura, cumprir uma sequência de capítulos ou chegar ao fim do ano com mais uma tarefa concluída. Queremos
+			terminar 2026 conhecendo melhor a nossa Bíblia, compreendendo como suas partes se conectam e enxergando com mais clareza a grande história que Deus revelou nas Escrituras.</p>
+		<p>Por isso, o plano seguirá um trilho intencional. Começaremos em Gênesis, observando a criação, a queda e as primeiras promessas de redenção. Depois acompanharemos a formação do povo de
+			Deus, a aliança, o êxodo, a conquista, os juízes, os reis e os profetas. Veremos como toda essa história, marcada pela fidelidade de Deus e pela constante necessidade humana de graça, prepara
+			o caminho para a chegada de Cristo.</p>
+		<p> Em seguida, entraremos nos Evangelhos, contemplando quem Jesus é, o que ensinou, como viveu, por que morreu e o que sua ressurreição significa. Por fim, acompanharemos o nascimento
+			e a missão da igreja, algumas das grandes verdades explicadas nas cartas do Novo Testamento e terminaremos em Apocalipse, olhando para a esperança da nova criação.</p>
+		<p> Assim, nossa caminhada seguirá esta grande linha:</p>
+		
+        <ul>
+          <li><strong>Criação</strong></li>
+          <li><strong>Queda</strong></li>
+          <li><strong>Redenção</strong></li>
+		  <li><strong>Consumação</strong></li>
+        </ul>
+		
+		<p> Não leremos todos os capítulos da Bíblia nesses 120 dias. A proposta é diferente: selecionaremos textos fundamentais que nos ajudem a enxergar o conjunto das Escrituras. Queremos aprender a
+			perceber que a Bíblia não é uma coleção de histórias desconectadas, mas uma única grande história de redenção, escrita por Deus e que encontra seu centro e cumprimento em Jesus Cristo.</p>
+		<p> De segunda a sexta-feira teremos uma leitura. Aos sábados e domingos, faremos uma pausa para recuperar algum texto perdido, reler aquilo que mais chamou nossa atenção, conversar sobre o
+			que aprendemos e deixar a Palavra descer da mente para o coração e para a vida.</p>
+		<p> Ao longo desses 120 dias, o convite é simples: leia devagar, procure entender, faça perguntas ao texto, ore a partir dele e caminhe com a igreja. Porque o objetivo não é apenas ler mais a Bíblia,
+			mas é aprender a enxergar a vida pela Bíblia.</p>
+      </section>
+
+      <section class="modal-section">
+        <h3>Antes de ler a Bíblia, ore!</h3>
+		
+		<p>Ler a Bíblia não é apenas um exercício intelectual. Precisamos ler com atenção, observar o
+contexto, procurar entender as palavras e pensar sobre o significado do texto. Mas, ao
+mesmo tempo, reconhecemos que dependemos do Espírito Santo para que a verdade de
+Deus seja compreendida, recebida e aplicada ao nosso coração.</p>
+		<p>O mesmo Espírito que inspirou as Escrituras é aquele que ilumina a mente do povo de Deus
+para compreendê-las. Por isso, Calvino dizia: “Aquele que fez com que as Escrituras
+Sagradas fossem escritas é o mesmo que nos ensina a lê-la.” Não significa que o Espírito nos
+dará uma nova revelação ou um significado escondido no texto. A iluminação é a obra pela
+qual ele abre nossos olhos para reconhecermos, compreendermos e recebermos a verdade
+que Deus já revelou em sua Palavra.</p>
+		<p>É por isso que Palavra e Espírito não devem ser separados. Não esperamos que o Espírito
+fale conosco independentemente das Escrituras; também não devemos nos aproximar das
+Escrituras como se nossa inteligência fosse suficiente para produzir crescimento espiritual.
+Como afirmou John Stott: “À parte do Espírito, a Palavra está morta, ao passo que, à parte da
+Palavra, o Espírito é desconhecido.”</p>
+		<p>A Confissão de Fé de Westminster ensina que é necessária “a íntima iluminação do Espírito
+de Deus para a salvadora compreensão das coisas reveladas na Palavra”. Portanto, começar
+a leitura orando é uma maneira de reconhecer nossa dependência. Não pedimos que Deus
+revele algo além da Bíblia. Pedimos que ele nos dê olhos para enxergar aquilo que já colocou
+diante de nós.</p>
+		<p>O Salmo 119.18 pode se tornar, então, uma pequena oração para todos os dias do IPPN 120
+Dias de Bíblia: “Desvenda os meus olhos, para que eu contemple as maravilhas da tua lei.”</p>
+		<p>Antes de cada leitura, pare por alguns segundos e ore: “Senhor, obrigado por tua Palavra.
+Espírito Santo, ilumina minha mente para que eu compreenda o que está escrito. Mostra-me
+quem tu és, confronta aquilo que precisa mudar em mim, fortalece minha fé em Cristo e
+ajuda-me a obedecer à tua Palavra. Amém.”</p>
+		<p>Depois, leia o texto e faça as quatro perguntas propostas no plano. Assim, a sua leitura não
+será apenas a Bíblia aberta diante dos olhos, mas também coração aberto diante de Deus.</p>
+	</section>
+	
+	<section class="modal-section">
+        <h3>Perguntas para reflexão</h3>
+        <ul>
+          <strong>1.</strong> O que este texto me mostra sobre Deus?<br>
+          <strong>2.</strong> O que ele revela sobre o ser humano?<br>
+          <strong>3.</strong> Onde este texto está dentro da grande história da redenção?<br>
+		  <strong>4.</strong> O que devo crer, abandonar, agradecer ou praticar hoje?<br><br>
+		  
+		  <ul>
+		  <p><strong>Exemplo - Marcos 10.46–52, a cura de Bartimeu</strong></p><br>
+<p><strong>1)</strong> O que este texto me mostra sobre Deus?<br>
+Jesus é misericordioso, ouve quem clama por ele e tem poder para
+transformar uma vida.</p><br>
+<p><strong>2)</strong> O que ele revela sobre o ser humano?<br>
+Somos necessitados e dependentes. Como Bartimeu, precisamos
+reconhecer nossa condição e clamar por Cristo.</p><br>
+<p><strong>3)</strong> Onde este texto está dentro da grande história da redenção?<br>
+Jesus está revelando que é o Messias prometido, aquele que veio trazer
+restauração e salvação.</p><br>
+<p><strong>4)</strong> O que devo crer, abandonar, agradecer ou praticar hoje?<br>
+Devo crer que Cristo é suficiente, abandonar a autossuficiência, agradecer
+por sua misericórdia e aprender a buscá-lo com fé.</p><br>
+<p><strong>Não é preciso escrever muito. Duas ou três frases já são
+suficientes. O objetivo é terminar a leitura entendendo o texto e
+pensando em como a Palavra deve moldar a vida.</strong></p><br>
+		  </ul>
+            <ul>
+              <li><strong>Leia:</strong> Aprofunde-se no texto sagrado.</li>
+              <li><strong>Ouça:</strong> Escute a reflexão pastoral.</li>
+              <li><strong>Reflita:</strong> Medite no ensino para a sua vida pessoal.</li>
+              <li><strong>Pratique:</strong> Aplique a palavra no seu dia a dia e relacionamentos.</li>
+            </ul>
+          
+          
+        </ul>
+      </section>
+
+    </div>
+  </div>
+</div>
+
+  <audio id="audio-element" preload="metadata"></audio>
+  <div class="toast" id="toast"></div>
+
+  <script src="leituras.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
